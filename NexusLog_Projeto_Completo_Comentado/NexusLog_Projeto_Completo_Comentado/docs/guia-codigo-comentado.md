@@ -1,0 +1,37 @@
+# Guia do código-fonte comentado
+
+- `src/main/java/br/edu/nexuslog/App.java` — CLASSE DE DEMONSTRAÇÃO: ponto de entrada usado para tornar o comportamento do projeto observável em sala.
+- `src/main/java/br/edu/nexuslog/PatternsDemo.java` — CLASSE DE DEMONSTRAÇÃO: ponto de entrada usado para tornar o comportamento do projeto observável em sala.
+- `src/main/java/br/edu/nexuslog/QualityCheck.java` — CLASSE DE DEMONSTRAÇÃO: ponto de entrada usado para tornar o comportamento do projeto observável em sala.
+- `src/main/java/br/edu/nexuslog/application/CreateShipmentUseCase.java` — APLICAÇÃO: coordena um caso de uso sem assumir detalhes de infraestrutura.
+- `src/main/java/br/edu/nexuslog/domain/Delivery.java` — DOMÍNIO: contém conceitos centrais do negócio. O objetivo é manter regras essenciais separadas de detalhes de infraestrutura.
+- `src/main/java/br/edu/nexuslog/domain/DeliveryStatus.java` — DOMÍNIO: contém conceitos centrais do negócio. O objetivo é manter regras essenciais separadas de detalhes de infraestrutura.
+- `src/main/java/br/edu/nexuslog/domain/Shipment.java` — DOMÍNIO: contém conceitos centrais do negócio. O objetivo é manter regras essenciais separadas de detalhes de infraestrutura.
+- `src/main/java/br/edu/nexuslog/integration/CarrierGateway.java` — INTEGRAÇÃO: isola dependências externas atrás de contratos internos. Isso reduz acoplamento com fornecedores.
+- `src/main/java/br/edu/nexuslog/integration/CorreiosAdapter.java` — INTEGRAÇÃO: isola dependências externas atrás de contratos internos. Isso reduz acoplamento com fornecedores.
+- `src/main/java/br/edu/nexuslog/integration/external/CorreiosLegacyClient.java` — INTEGRAÇÃO: isola dependências externas atrás de contratos internos. Isso reduz acoplamento com fornecedores.
+- `src/main/java/br/edu/nexuslog/legacy/LegacyShippingService.java` — LEGADO DIDÁTICO: este código é propositalmente problemático e existe para diagnóstico e comparação. NÃO representa a solução recomendada.
+- `src/main/java/br/edu/nexuslog/patterns/abstractfactory/CorreiosServiceFactory.java` — ABSTRACT FACTORY: cria uma família coerente de serviços relacionados (ex.: etiqueta + rastreamento) para um mesmo operador logístico.
+- `src/main/java/br/edu/nexuslog/patterns/abstractfactory/LabelService.java` — ABSTRACT FACTORY: cria uma família coerente de serviços relacionados (ex.: etiqueta + rastreamento) para um mesmo operador logístico.
+- `src/main/java/br/edu/nexuslog/patterns/abstractfactory/LogisticsServiceFactory.java` — ABSTRACT FACTORY: cria uma família coerente de serviços relacionados (ex.: etiqueta + rastreamento) para um mesmo operador logístico.
+- `src/main/java/br/edu/nexuslog/patterns/abstractfactory/RapidexServiceFactory.java` — ABSTRACT FACTORY: cria uma família coerente de serviços relacionados (ex.: etiqueta + rastreamento) para um mesmo operador logístico.
+- `src/main/java/br/edu/nexuslog/patterns/abstractfactory/TrackingService.java` — ABSTRACT FACTORY: cria uma família coerente de serviços relacionados (ex.: etiqueta + rastreamento) para um mesmo operador logístico.
+- `src/main/java/br/edu/nexuslog/patterns/facade/NexusLogFacade.java` — FACADE: oferece uma entrada simplificada para um fluxo que combina vários subsistemas e padrões.
+- `src/main/java/br/edu/nexuslog/patterns/factorymethod/Motorcycle.java` — FACTORY METHOD: delega a subclasses/creators a decisão sobre qual veículo concreto criar, reduzindo dependência direta de `new` no fluxo principal.
+- `src/main/java/br/edu/nexuslog/patterns/factorymethod/MotorcycleCreator.java` — FACTORY METHOD: delega a subclasses/creators a decisão sobre qual veículo concreto criar, reduzindo dependência direta de `new` no fluxo principal.
+- `src/main/java/br/edu/nexuslog/patterns/factorymethod/TransportVehicle.java` — FACTORY METHOD: delega a subclasses/creators a decisão sobre qual veículo concreto criar, reduzindo dependência direta de `new` no fluxo principal.
+- `src/main/java/br/edu/nexuslog/patterns/factorymethod/Truck.java` — FACTORY METHOD: delega a subclasses/creators a decisão sobre qual veículo concreto criar, reduzindo dependência direta de `new` no fluxo principal.
+- `src/main/java/br/edu/nexuslog/patterns/factorymethod/TruckCreator.java` — FACTORY METHOD: delega a subclasses/creators a decisão sobre qual veículo concreto criar, reduzindo dependência direta de `new` no fluxo principal.
+- `src/main/java/br/edu/nexuslog/patterns/factorymethod/Van.java` — FACTORY METHOD: delega a subclasses/creators a decisão sobre qual veículo concreto criar, reduzindo dependência direta de `new` no fluxo principal.
+- `src/main/java/br/edu/nexuslog/patterns/factorymethod/VanCreator.java` — FACTORY METHOD: delega a subclasses/creators a decisão sobre qual veículo concreto criar, reduzindo dependência direta de `new` no fluxo principal.
+- `src/main/java/br/edu/nexuslog/patterns/factorymethod/VehicleCreator.java` — FACTORY METHOD: delega a subclasses/creators a decisão sobre qual veículo concreto criar, reduzindo dependência direta de `new` no fluxo principal.
+- `src/main/java/br/edu/nexuslog/patterns/observer/DeliveryEventPublisher.java` — OBSERVER: permite que interessados sejam notificados quando o estado de uma entrega muda, sem acoplar Delivery a canais específicos.
+- `src/main/java/br/edu/nexuslog/patterns/observer/DeliveryObserver.java` — OBSERVER: permite que interessados sejam notificados quando o estado de uma entrega muda, sem acoplar Delivery a canais específicos.
+- `src/main/java/br/edu/nexuslog/patterns/observer/EmailObserver.java` — OBSERVER: permite que interessados sejam notificados quando o estado de uma entrega muda, sem acoplar Delivery a canais específicos.
+- `src/main/java/br/edu/nexuslog/patterns/observer/OperationsObserver.java` — OBSERVER: permite que interessados sejam notificados quando o estado de uma entrega muda, sem acoplar Delivery a canais específicos.
+- `src/main/java/br/edu/nexuslog/patterns/strategy/EconomicFreight.java` — STRATEGY: encapsula algoritmos intercambiáveis de cálculo de frete. O cliente depende da abstração FreightStrategy, não de condicionais espalhadas.
+- `src/main/java/br/edu/nexuslog/patterns/strategy/ExpressFreight.java` — STRATEGY: encapsula algoritmos intercambiáveis de cálculo de frete. O cliente depende da abstração FreightStrategy, não de condicionais espalhadas.
+- `src/main/java/br/edu/nexuslog/patterns/strategy/FreightStrategy.java` — STRATEGY: encapsula algoritmos intercambiáveis de cálculo de frete. O cliente depende da abstração FreightStrategy, não de condicionais espalhadas.
+- `src/main/java/br/edu/nexuslog/patterns/strategy/PriorityFreight.java` — STRATEGY: encapsula algoritmos intercambiáveis de cálculo de frete. O cliente depende da abstração FreightStrategy, não de condicionais espalhadas.
+- `src/main/java/br/edu/nexuslog/service/NotificationService.java` — SERVIÇO DIDÁTICO: etapa intermediária de separação de responsabilidades usada antes da introdução formal dos padrões.
+- `src/main/java/br/edu/nexuslog/service/SimpleFreightService.java` — SERVIÇO DIDÁTICO: etapa intermediária de separação de responsabilidades usada antes da introdução formal dos padrões.
