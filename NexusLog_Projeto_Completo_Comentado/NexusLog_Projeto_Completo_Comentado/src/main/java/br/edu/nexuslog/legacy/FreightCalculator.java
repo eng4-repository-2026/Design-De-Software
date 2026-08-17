@@ -1,4 +1,4 @@
-package br.edu.nexuslog.shipping;
+package br.edu.nexuslog.legacy;
 
 public class FreightCalculator {
 
