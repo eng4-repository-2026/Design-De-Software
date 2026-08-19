@@ -1,3 +1,4 @@
+/*
 package br.edu.nexuslog.legacy.CarrierService;
 
 public class RapidexCarrier implements CarrierService {
@@ -7,3 +8,4 @@ public class RapidexCarrier implements CarrierService {
         System.out.println("Chamando API Rapidex...");
     }
 }
+*/

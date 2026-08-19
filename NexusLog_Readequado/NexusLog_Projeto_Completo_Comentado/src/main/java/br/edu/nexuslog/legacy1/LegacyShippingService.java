@@ -10,8 +10,9 @@
  * 2) identifique de quais abstrações ela depende;
  * 3) observe o que mudaria se surgisse uma nova regra/integração;
  * 4) relacione a decisão a coesão, acoplamento, SOLID e/ou padrão de projeto.
- */
-package br.edu.nexuslog.legacy;
+ *//*
+
+package br.edu.nexuslog.legacy1;
 
 // Classe concreta: implementa uma responsabilidade específica dentro do desenho.
 
@@ -43,3 +44,4 @@ public class LegacyShippingService {
         return price;
     }
 }
+*/

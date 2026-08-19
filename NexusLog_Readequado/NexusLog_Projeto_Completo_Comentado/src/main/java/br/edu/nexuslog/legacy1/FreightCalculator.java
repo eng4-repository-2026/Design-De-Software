@@ -1,4 +1,5 @@
-package br.edu.nexuslog.legacy;
+/*
+package br.edu.nexuslog.legacy1;
 
 public class FreightCalculator {
 
@@ -10,4 +11,4 @@ public class FreightCalculator {
             case PRIORITARIO -> 40.0 + weightKg * 4.5;
         };
     }
-}
+}*/

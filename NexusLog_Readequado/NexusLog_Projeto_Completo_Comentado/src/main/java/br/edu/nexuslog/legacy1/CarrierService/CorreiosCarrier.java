@@ -1,3 +1,4 @@
+/*
 package br.edu.nexuslog.legacy.CarrierService;
 
 public class CorreiosCarrier implements CarrierService {
@@ -7,3 +8,4 @@ public class CorreiosCarrier implements CarrierService {
         System.out.println("Chamando API Correios...");
     }
 }
+*/

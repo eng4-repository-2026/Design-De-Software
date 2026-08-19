@@ -7,3 +7,6 @@ target/
 
 # Java
 *.class
+
+target/
+out/

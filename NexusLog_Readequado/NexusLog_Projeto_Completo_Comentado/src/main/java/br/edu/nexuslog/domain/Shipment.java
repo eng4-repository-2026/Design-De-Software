@@ -11,7 +11,7 @@
  * 3) observe o que mudaria se surgisse uma nova regra/integração;
  * 4) relacione a decisão a coesão, acoplamento, SOLID e/ou decisão arquitetural.
  */
-package main.java.br.edu.nexuslog.domain;
+package br.edu.nexuslog.domain;
 
 // Record: objeto de dados imutável, adequado para representar um valor/conceito simples do domínio.
 

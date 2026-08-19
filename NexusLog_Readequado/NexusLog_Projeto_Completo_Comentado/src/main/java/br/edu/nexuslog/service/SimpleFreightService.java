@@ -11,10 +11,10 @@
  * 2) a partir da Aula 14, o resultado passa a ser armazenado em cache (Redis) — a fórmula
  *    em si não muda, só passa a não ser recalculada toda vez para os mesmos parâmetros.
  */
-package main.java.br.edu.nexuslog.service;
+package br.edu.nexuslog.service;
 
-import  main.java.br.edu.nexuslog.enums.FreightType;
-import main.java.br.edu.nexuslog.domain.Shipment;
+import br.edu.nexuslog.enums.FreightType;
+import br.edu.nexuslog.domain.Shipment;
 
 public class SimpleFreightService {
 
