@@ -1,4 +1,4 @@
-package br.edu.nexuslog.enums;
+package main.java.br.edu.nexuslog.enums;
 
 public enum FreightType {
     ECONOMICO,

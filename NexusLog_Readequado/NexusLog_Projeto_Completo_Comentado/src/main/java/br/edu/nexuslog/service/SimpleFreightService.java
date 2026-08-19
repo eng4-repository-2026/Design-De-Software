@@ -10,19 +10,15 @@
  * 1) esta é a mesma fórmula do LegacyShippingService, agora isolada em sua própria classe;
  * 2) a partir da Aula 14, o resultado passa a ser armazenado em cache (Redis) — a fórmula
  *    em si não muda, só passa a não ser recalculada toda vez para os mesmos parâmetros.
- */j
-package br.edu.nexuslog.service;
-import  br.edu.nexuslog.enums.FreightType;
+ */
+package main.java.br.edu.nexuslog.service;
 
-import br.edu.nexuslog.domain.Shipment;
-import org.springframework.cache.annotation.Cacheable;
-import org.springframework.stereotype.Service;
+import  main.java.br.edu.nexuslog.enums.FreightType;
+import main.java.br.edu.nexuslog.domain.Shipment;
 
-@Service
 public class SimpleFreightService {
 
     //Enum na chave do cache (#freightType) ajuda a diferenciar o custo do frete para o mesmo produto
-    @Cacheable(value = "frete", key = "#shipment.id() + #freightType")
     public double calculate(Shipment shipment, FreightType freightType) {
         // Etapa intermediária: ainda há seleção por tipo — ponto de crescimento natural
         // caso surjam novas modalidades de frete no futuro.

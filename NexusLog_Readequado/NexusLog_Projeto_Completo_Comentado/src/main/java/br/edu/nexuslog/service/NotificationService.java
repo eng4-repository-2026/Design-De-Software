@@ -11,7 +11,7 @@
  * 3) observe o que mudaria se surgisse uma nova regra/integração;
  * 4) relacione a decisão a coesão, acoplamento, SOLID e/ou decisão arquitetural.
  */
-package br.edu.nexuslog.service;
+package main.java.br.edu.nexuslog.service;
 
 // Classe concreta: implementa uma responsabilidade específica dentro do desenho.
 
