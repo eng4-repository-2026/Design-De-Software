@@ -21,6 +21,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class SimpleFreightService {
 
+    //Enum na chave do cache (#freightType) ajuda a diferenciar o custo do frete para o mesmo produto
     @Cacheable(value = "frete", key = "#shipment.id() + #freightType")
     public double calculate(Shipment shipment, FreightType freightType) {
         // Etapa intermediária: ainda há seleção por tipo — ponto de crescimento natural
